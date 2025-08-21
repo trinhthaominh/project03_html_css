@@ -233,6 +233,8 @@ main {
   background: #fff;
   box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.05);
   cursor: pointer;
+  translate: 25px 0;
+  transition: translate 1s;
 }
 .service-item .icon {
   width: 60px;
@@ -429,4 +431,76 @@ main {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.85; /* 185.714% */
+}
+
+.dentist {
+  transition: transform 1s ease; /* áp dụng cho transform */
+}
+
+.dentist:hover {
+  cursor: pointer;
+  box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.05);
+  transform: translateY(-20px); /* hover thì bay lên */
+}
+.slider {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.btn-slide {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn-slide.prev {
+  border: 1px solid #575f66;
+}
+.btn-slide.next {
+  background: #2e80ce;
+}
+/* ============== CTA ================= */
+.cta-section {
+  margin-top: 265px;
+  background: #2e80ce;
+}
+
+.cta-section .container {
+  border-radius: 4px;
+  height: 427px;
+  display: flex;
+  gap: 160px;
+}
+.cta-section .cta-left-content {
+  width: 284px;
+  background-color: antiquewhite;
+  position: relative;
+}
+.cta-section .cta-icon {
+  position: absolute;
+  top: -125px;
+}
+.cta-section .heading-lv2 {
+  width: 489px;
+  padding-top: 76px;
+  color: #fff;
+}
+.cta-section p.desc {
+  color: #fff;
+  width: 586px;
+}
+.cta-section .download {
+  margin-top: 38px;
+}
+.cta-section .download img:hover {
+  cursor: pointer;
+}
+.cta-section .download img:first-child {
+  margin-right: 38px;
 }
