@@ -638,3 +638,136 @@ main {
   height: 60px;
   border-radius: 30px;
 }
+
+/* ============== Footer ================= */
+footer {
+  background: #10375c;
+  width: 100%;
+  flex-shrink: 0;
+  font-family: "Open Sans";
+  color: #a9b3bb;
+}
+.footer-contact .logo-brand img:first-child {
+  margin-right: 10px;
+}
+.footer-contact {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-slogan {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.65;
+  width: 336px;
+  margin-top: 21px;
+}
+.stay-in-touch {
+  display: flex;
+  gap: 10px;
+}
+.footer-index {
+  margin-bottom: 18px;
+}
+.footer-col .index {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+  margin-bottom: 20px;
+  margin-top: 28px;
+}
+
+.footer-col .ul-index li {
+  padding-bottom: 10px;
+  margin: 10px 0;
+}
+.social-media {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media.active {
+  border-radius: 32px;
+  background: #2e80ce;
+  cursor: pointer;
+}
+.footer-cta {
+  color: #a9b3bb;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.85;
+  width: 273px;
+}
+.email {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.email input {
+  width: 212px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  padding-left: 10px;
+  background-color: #10375c;
+}
+.email input:focus {
+  width: 212px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  padding-left: 10px;
+  background-color: #10375c;
+  color: #f6fbff;
+}
+.email input::placeholder {
+  color: #9ca8b1;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.85; /* 185.714% */
+}
+.btn-subscribe {
+  width: 108px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #2e80ce;
+}
+
+.copyright {
+  color: #aab3ba;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.85; /* 185.714% */
+  margin-top: 35px;
+  position: relative;
+  width: 1170px;
+}
+
+.copyright::before {
+  content: "";
+  width: 1170px;
+  height: 1px;
+  flex-shrink: 0;
+  background: #406181;
+  position: absolute;
+  top: -28px;
+  left: 0px;
+}
