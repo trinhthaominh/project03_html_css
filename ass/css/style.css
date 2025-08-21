@@ -17,6 +17,30 @@ body {
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
 }
+/* Ẩn hoàn toàn thanh cuộn */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* hoặc custom */
+::-webkit-scrollbar {
+  width: 15px; /* độ rộng scrollbar */
+  height: 25px; /* nếu có scrollbar ngang */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* màu nền track */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2e80ce; /* màu "nút kéo" */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1c5a99; /* đổi màu khi hover */
+}
 
 /* ============== common ================= */
 input,
@@ -71,10 +95,11 @@ header {
 }
 .navbar-fixed {
   width: 100%;
-  height: 80px;
+  height: 120px;
   background-color: var(--header-bg);
   z-index: 2;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -442,7 +467,7 @@ main {
   box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.05);
   transform: translateY(-20px); /* hover thì bay lên */
 }
-.dentist .slider {
+.our-dentist .slider {
   margin-top: 38px;
   display: flex;
   justify-content: center;
